@@ -1,0 +1,1355 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding: 40px 115px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../photo/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    padding-bottom: 300px;
+    max-height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .header .logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+.container .header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.container .header ul li{
+    list-style-type: none;
+}
+.container .header ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.container .header ul :nth-child(1) a{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.container .header ul :nth-child(5) a{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #ee626b;
+}
+
+.container .header ul :nth-child(2) a,
+.container .header ul :nth-child(3) a,
+.container .header ul :nth-child(4) a{
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.5s ease;
+}
+
+
+.container .header ul :nth-child(2) a:hover,
+.container .header ul :nth-child(3) a:hover,
+.container .header ul :nth-child(4) a:hover{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+
+.container .container-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 40px 100px;*/
+    color: white;
+}
+
+@media (min-width:1200px) {
+    .container .container-content{
+        width: 1140px;
+    }
+}
+
+
+.container .container-content .text{
+    max-width: 65%;
+}
+
+.container .container-content .text h6{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: -14px;
+}
+
+.container .container-content .text h1{
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    line-height: 55px;
+}
+.container .container-content .text .para{
+    max-width: 75%;
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 70px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container .container-content .text hr{
+    border-color: #ee626b;
+    margin-top: -40px;
+    margin-bottom: 40px ;
+    display: inline-block;
+    width: 50%;
+    height: 3px;
+    background-color: #ee626b;
+}
+
+.container .container-content .image{
+    width: 35%;
+    height: 500px;
+    position: relative;
+
+}
+
+
+.container .container-content .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.container .container-content .image .offer{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: -25px;
+    bottom: -25px;
+    background-color:#ee626b;
+    z-index: 1;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.container .container-content .image .price{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    background-color: #008af8;
+    z-index: 1;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+
+
+.text .search input{
+    width: 60%;
+    height: 80%;
+    border: none;
+    outline: none;
+}
+
+.text .search input::placeholder{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.text .search button{
+    width: 35%;
+    height: 100%;
+    background-color:#ee626b;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.text .search button:hover{
+    background-color: #0071f8;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .container-content .text{
+        width: 100%;
+    }
+    .container-content .image{
+        display: none;
+    }
+}
+
+.features{
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding: 40px 115px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+@media (min-width:1200px) {
+    .features{
+        width: 1350px;
+    }
+}
+
+.features .cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -140px;
+}
+
+.features .cards .card{
+    width: calc(23% + 10px);
+    height: 210px;
+    background-color: white;
+    box-shadow: inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.features .cards .card .icon{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #0071f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: background-color 0.5s ease;
+}
+
+.features .cards .card .icon:hover{
+    background-color: #ee626b;
+}
+
+.features .cards .card i{
+    font-size: 45px;
+    color: white;
+}
+
+.features .cards .card{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.trend-games{
+    width: 100%;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding: 40px 115px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: -120px;
+}
+
+@media (min-width:1200px) {
+    .trend-games{
+        width: 1350px;
+    }
+}
+
+.trend-games .text{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.trend-games .text h6{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    color: #ee626b;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.trend-games .text h1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.trend-games .text button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ee626b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.trend-games button:hover{
+    background-color: #0071f8;
+}
+
+.trend-games .games-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.trend-games .games-cards .games-card{
+    width: 23%;
+    background-color: #eeeeee;
+    height: 280px;
+    border-radius: 30px;
+}
+
+.trend-games .games-cards .games-card .img{
+    width: 100%;
+    height: 65%;
+    border-radius: 30px;
+}
+
+.trend-games .games-cards .games-card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.trend-games .games-cards .games-card .desc{
+    width: 100%;
+    height: 35%;
+    position: relative;
+}
+
+.trend-games .games-cards .games-card .desc i{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 15px;
+    background-color: #ee626b;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:white;
+    transition: background-color 1s ease;
+
+}
+
+.trend-games .games-cards .games-card .desc span{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #7a7a7a;
+}
+
+.trend-games .games-cards .games-card .desc h4{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    transition: color 1s ease;
+}
+
+.trend-games .games-cards .games-card:hover .desc i {
+    background-color: #008af8;
+}
+
+.trend-games .games-cards .games-card:hover .desc h4 {
+    color:#008af8;    
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .trend-games .games-cards .games-card .desc i{
+        width: 30px;
+        height: 30px;
+        right: 10px;
+    }
+    .trend-games .games-cards .games-card .desc span{
+        font-size: 13px;
+    }
+    .trend-games .games-cards .games-card .desc h4{
+        font-size: 14px;
+    }
+}
+
+body > .trend-games:nth-child(4) {
+    background-color: #f7f7f7;
+    border-radius: 200px;
+    margin-top: 70px;
+    padding-bottom: 120px;
+}
+
+.top-games-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+
+.top-games-cards .top-games-card{
+    width: 15%;
+    background-color: white;
+    height: 280px;
+    border-radius: 30px;
+}
+
+.top-games-cards .top-games-card .img{
+    width: 100%;
+    height: 60%;
+    border-radius: 30px;
+}
+
+.top-games-cards .top-games-card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.top-games-cards .top-games-card .desc{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.top-games-cards .top-games-card .desc span{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #7a7a7a;
+}
+
+.top-games-cards .top-games-card .desc h4{
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    transition: color 0.5s ease;
+}
+
+.top-games-cards .top-games-card .desc span:last-child{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #ee626b;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.top-games-cards .top-games-card:hover .desc span:last-child{
+    background-color: #008af8;
+}
+
+.top-games-cards .top-games-card:hover .desc h4{
+    color: #008af8;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .top-games-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .top-games-cards .top-games-card{
+        width: 33%;
+        height: 240px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.categories{
+    width: 100%;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding: 40px 115px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 140px;
+    margin-top: -80px;
+}
+
+@media (min-width:1200px) {
+    .categories{
+        width: 1350px;
+    }
+}
+
+.categories .categories-text{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.categories .categories-text h6{
+    color: #ee626b;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.categories .categories-text h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.categories .categories-cards{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories .categories-cards .categories-card{
+    width: 18%;
+    height: 100%;
+    background-color: #0071f8;
+    border-radius: 30px;
+}
+
+.categories .categories-card .desc{
+    width: 100%;
+    height: 25%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.categories .categories-card .img{
+    width: 100%;
+    height: 75%;
+}
+
+.categories .categories-card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.information{
+    position: relative;
+    width: 100%;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding: 40px 115px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width:1200px) {
+    .information{
+        width: 1350px;
+    }
+}
+
+.information .info-card-1{
+    width: 43%;
+    padding: 80px;
+    height: 600px;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+}
+
+.information .info-card-1 .card-1-content h6{
+    color: #ee626b;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.information .info-card-1 .card-1-content h2{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.information .info-card-1 .card-1-content h2 span{
+    color: #0071f8;
+}
+
+.information .info-card-1 .card-1-content p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4a4a4a;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+}
+
+.information .info-card-1 .card-1-content button{
+    background-color: #ee626b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.information .info-card-1 .card-1-content button:hover{
+    background-color: #0071f8;
+}
+
+.information .info-card-2{
+    width: 43%;
+    padding: 70px;
+    height: 470px;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    align-self: flex-end;
+}
+
+.information .info-card-2 .card-2-content h6{
+    color: #ee626b;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+
+.information .info-card-2 .card-2-content h2{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 50px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+}
+
+.information .info-card-2 .card-2-content h2 span{
+    color: #0071f8;
+}
+
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+
+
+.information .info-card-2 .card-2-content .subscribe input{
+    width: 50%;
+    height: 80%;
+    border: none;
+    outline: none;
+}
+
+.information .info-card-2 .card-2-content .subscribe input::placeholder{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.information .info-card-2 .card-2-content .subscribe button{
+    width: 50%;
+    height: 100%;
+    background-color:#ee626b;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.information .info-card-2 .card-2-content .subscribe button:hover{
+    background-color: #0071f8;
+}
+
+.information .img{
+    position: absolute;
+    width: 40%;
+    height: 500px;
+    background-image: url(../photo/cta-bg.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 30%;
+    right: 30%;
+    top: -45px;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .information .info-card-1 .card-1-content h2{
+        font-size: 29px;
+        line-height: 40px;
+    }
+    .information .info-card-1 .card-1-content p{
+        font-size: 14px;
+    }
+
+    .information .info-card-2 .card-2-content h2{
+        font-size: 29px;
+        line-height: 40px;
+    }
+    .subscribe{
+        flex-direction: column;
+    }
+    .information .info-card-2 .card-2-content .subscribe input{
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .information .info-card-2 .card-2-content .subscribe button{
+        width: 70%;
+        height: 60px;
+    }
+}
+
+.footer{
+    min-height: 150px;
+    width: 100%;
+    background-image: url(../photo/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    text-align: center;
+}
+
+
+
+.footer p{
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+@media (min-width:1200px){
+    .header{
+        width: 1150px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .header{
+        width: 800px;
+        padding-top: 40px;
+    }
+    .container .header ul{
+        width: 80%;
+    }
+    .container .header ul li a{
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container .header{
+        width: 100%;
+        position: relative;
+        padding: 0 40px;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+    .container .header .logo{
+        position: absolute;
+        left: 0;
+        top: 10px;
+        margin: 0;
+    }
+    .container .header ul{
+        display: none;
+    }
+    .container-content{
+        margin:0
+    }
+    .container .container-content .text{
+        text-align: center;
+        max-width: 100%;
+    }
+    .container .container-content .text .para{
+        max-width: 100%;
+    }
+    .container .container-content .text .search{
+        width: 100%;
+    }
+    .container .header ul{
+        width: 100%;
+    }
+    .container .header ul li a{
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .features .cards{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .features .cards .card{
+        width: 48%;
+    }
+    .trend-games .trend-content .games-cards{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .trend-games .trend-content .games-cards .games-card{
+        width: 48%;
+    }
+    .top-games-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .top-games-cards .top-games-card{
+        width: 30%;
+        margin-bottom: 30px;
+    }
+    .categories{
+        margin-bottom: 300px;
+    }
+    .categories .categories-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .categories .categories-cards .categories-card{
+        width: 32%;
+    }
+    .information{
+        position:static;
+        flex-direction: column;
+    }
+    .information .info-card-1{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .information .info-card-2{
+        width: 100%;
+    }
+    .information .img{
+        display: none;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 767px){
+    .container .header{
+        padding: 0 40px;
+        width: 600px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .container .header ul{
+        display: none;
+    }
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .container-content .image{
+        display: none;
+    }
+    .container-content{
+        margin:0
+    }
+    .container .container-content .text{
+        text-align: center;
+        max-width: 100%;
+    }
+    .container .container-content .text .para{
+        max-width: 100%;
+    }
+    .container .container-content .text .search{
+        width: 100%;
+    }
+    .container .header ul{
+        width: 100%;
+    }
+    .container .header ul li a{
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .features{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .features .cards{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .features .cards .card{
+        width: 100%;
+    }
+    .trend-games{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .trend-games .trend-content .text{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .trend-games .text button{
+        display: none;
+    }
+    .trend-games .trend-content .games-cards{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .trend-games .trend-content .games-cards .games-card{
+        width: 100%;
+    }
+    .top-games-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .top-games-cards .top-games-card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .categories{
+        margin-bottom: 1100px;
+    }
+    .categories .categories-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
+    .categories .categories-cards .categories-card{
+        width: 100%;
+    }
+    .information{
+        position:static;
+        flex-direction: column;
+    }
+    .information .info-card-1{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .information .info-card-1 .card-1-content h2{
+        font-size: 26px;
+    }
+    .information .info-card-2{
+        width: 100%;
+    }
+    .information .img{
+        display: none;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 599px){
+    .container .header{
+        width: 100%;
+        position: relative;
+        padding: 0 40px;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+    .container .header .logo{
+        position: absolute;
+        left: 0;
+        top: 10px;
+        margin: 0;
+    }
+    .container .header ul{
+        display: none;
+    }
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    .container-content .image{
+        display: none;
+    }
+    .container-content{
+        margin:0
+    }
+    .container .container-content .text{
+        text-align: center;
+        max-width: 100%;
+    }
+    .container .container-content .text .para{
+        max-width: 100%;
+    }
+    .container .container-content .text .search{
+        width: 100%;
+    }
+    .container .header ul{
+        width: 100%;
+    }
+    .container .header ul li a{
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .features{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .features .cards{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .features .cards .card{
+        width: 100%;
+    }
+    .trend-games{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .trend-games .trend-content .text{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .trend-games .text h1{
+        font-size: 31px;
+    }
+    .trend-games .text button{
+        display: none;
+    }
+    .trend-games .trend-content .games-cards{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .trend-games .trend-content .games-cards .games-card{
+        width: 100%;
+    }
+    body > .trend-games:nth-child(4) {
+        border-radius: 50px;
+    }
+    .top-games-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .top-games-cards .top-games-card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .categories{
+        margin-bottom: 1100px;
+    }
+    .categories .categories-text h1 {
+        font-size: 28px;
+    }
+        .categories .categories-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
+    .categories .categories-cards .categories-card{
+        width: 100%;
+    }
+    .information{
+        position:static;
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .information .info-card-1{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .information .info-card-1 .card-1-content h2{
+        font-size: 26px;
+    }
+    .information .info-card-2{
+        width: 100%;
+    }
+    .information .img{
+        display: none;
+    }
+    .footer{
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 479px){
+    .container .header{
+        width: 100%;
+        position: relative;
+        padding: 0 40px;
+        margin: 0;
+    }
+    .container .header .logo{
+        display: none;
+    }
+    .container .header ul{
+        display: none;
+    }
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    .container-content .image{
+        display: none;
+    }
+    .container-content{
+        margin:0
+    }
+    .container .container-content .text{
+        text-align: center;
+        max-width: 100%;
+    }
+    .container .container-content .text .para{
+        max-width: 100%;
+    }
+    .container .container-content .text .search{
+        width: 100%;
+    }
+    .container .header ul{
+        width: 100%;
+    }
+    .container .header ul li a{
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .features{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .features .cards{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .features .cards .card{
+        width: 100%;
+    }
+    .trend-games{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .trend-games .trend-content .text{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .trend-games .text h1{
+        font-size: 20px;
+    }
+    .trend-games .text button{
+        display: none;
+    }
+    .trend-games .trend-content .games-cards{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .trend-games .trend-content .games-cards .games-card{
+        width: 100%;
+    }
+    body > .trend-games:nth-child(4) {
+        border-radius: 50px;
+    }
+    .top-games-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .top-games-cards .top-games-card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .categories{
+        margin-bottom: 1100px;
+    }
+    .categories .categories-text h1 {
+        font-size: 18px;
+    }
+        .categories .categories-cards{
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
+    .categories .categories-cards .categories-card{
+        width: 100%;
+    }
+    .information{
+        position:static;
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .information .info-card-1{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .information .info-card-1 .card-1-content h2{
+        font-size: 26px;
+    }
+    .information .info-card-2{
+        width: 100%;
+    }
+    .information .img{
+        display: none;
+    }
+    .footer{
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+}
+
