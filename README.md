@@ -1,5 +1,5 @@
 # lugx-gaming
-A modern web website
+A modern gaming shop
 ## :clipboard: Project Overview
 <div style = "display:flex; gap:10px;">
   <img src="images/home.PNG" alt="home" width="30%" height = "auto">
