@@ -17,4 +17,4 @@ A modern gaming shop
   <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="css" width="100px" height = "auto">
   <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="javascript" width="100px" height = "auto">
 </div>
-live preview:https://mostafa-ashraf0.github.io/Courses_Academy_website/
+live preview: https://mostafa-ashraf0.github.io/lugx-gaming/
